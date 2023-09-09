@@ -8,7 +8,6 @@
     color: #5ea4ee; /* Cor do texto ao passar o mouse (azul) */
 }
 
-
 /* Estilos para o rodapé */
 .footer {
     background-color: #333; /* Cor de fundo do rodapé (pode ser personalizada) */
@@ -38,7 +37,6 @@
     text-decoration: underline; /* Efeito de sublinhado ao passar o mouse sobre os links */
 }
 
-
 /* Estilo para as seções com imagem à esquerda */
 .container-left-image {
     background-color: #f8f8f8; /* Cor de fundo da seção */
@@ -65,11 +63,76 @@
     max-width: 100%; /* Imagem responsiva */
 }
 
-/* Estilo para as seções com imagem à esquerda */
-.container-left-image {
-    background-color: #f8f8f8; /* Cor de fundo da seção */
-    padding: 40px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 5px; /* Cantos arredondados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+/* Estilo personalizado para a seção de valores */
+.values-section {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Estilo para o título */
+.values-title {
+    font-family: Arial, sans-serif; /* Fonte do título */
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+/* Estilo para os valores */
+.values-list {
+    list-style: none; /* Remova os bullets da lista */
+    padding: 0; /* Remova o espaçamento interno da lista */
+}
+
+/* Estilo para cada item da lista */
+.values-list-item {
+    font-family: Georgia, serif; /* Fonte para os valores */
+    font-size: 18px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+}
+
+/* Estilo para a imagem redonda */
+.rounded-image {
+    border-radius: 50%; /* Forma redonda */
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+    margin: 0 auto 20px; /* Centralizar e adicionar margem inferior */
+    display: block; /* Para centralizar horizontalmente */
+}
+
+/* Estilo para a nova seção */
+.custom-section {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do conteúdo ao centro */
+    transition: background-color 0.3s ease; /* Efeito de transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para a seção */
+.custom-section:hover {
+    background-color: #555; /* Cor de fundo alterada ao passar o mouse */
+}
+
+/* Estilo para o texto estilizado */
+.styled-text {
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para as seções que se movem */
+.scrollable-section {
+    transition: transform 0.3s ease; /* Transição suave para o movimento */
+}
+
+/* Aplicar um deslocamento vertical positivo para mover a seção para baixo */
+.scrollable-section.move-down {
+    transform: translateY(100px); /* Ajuste o valor conforme necessário para a quantidade desejada de deslocamento */
+}
+
+/* Aplicar um deslocamento vertical negativo para mover a seção para cima */
+.scrollable-section.move-up {
+    transform: translateY(-100px); /* Ajuste o valor conforme necessário para a quantidade desejada de deslocamento */
 }

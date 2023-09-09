@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/filder.js"></script>
 
 </head>
 
@@ -132,16 +133,183 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="imagem/secao-background.jpg" alt="Imagem de Fundo" class="img-fluid">
+                    <img src="imagem/banner1.jpg" alt="Imagem de Fundo" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <h2>Título da Seção</h2>
-                    <p>Texto da seção. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2>Valores</h2>
+                    <ul>
+                        <li><strong>Empreendedorismo:</strong> Abraçamos a iniciativa e a criatividade, buscando
+                            constantemente novas oportunidades e desafiando o status quo para alcançar o sucesso.</li>
+                        <li><strong>Inovação:</strong> Acreditamos na capacidade de transformação através da inovação
+                            constante, adotando novas ideias e tecnologias para criar valor para nossos clientes e
+                            parceiros.</li>
+                        <li><strong>Compromisso:</strong> Honramos nossos compromissos com integridade e dedicação,
+                            tanto dentro quanto fora de nossa organização, garantindo relações de confiança e respeito.
+                        </li>
+                        <li><strong>Excelência:</strong> Buscamos a excelência em tudo o que fazemos, desde a qualidade
+                            de nossos produtos e serviços até a experiência de nossos clientes e o desenvolvimento de
+                            nossa equipe.</li>
+                        <li><strong>Colaboração:</strong> Reconhecemos o poder da colaboração e valorizamos as
+                            contribuições únicas de cada membro de nossa equipe, clientes, fornecedores e parceiros.
+                        </li>
+                        <li><strong>Sustentabilidade:</strong> Comprometemo-nos a operar de maneira responsável e
+                            sustentável, considerando os impactos sociais e ambientais de nossas ações e decisões.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Rodapé -->
+
+    <!-- Seção com Imagem, Título e Texto -->
+    <section class="container mt-5 scrollable-section">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imagem/banner3.jpg" alt="Imagem" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Propósito</h2>
+                <p>
+                    No Grupo Soares, nosso propósito é inspirar e capacitar indivíduos, famílias e comunidades,
+                    construindo um futuro melhor através de nossos produtos, serviços e valores. Nossa paixão pelo
+                    empreendedorismo nos impulsiona a criar soluções inovadoras e relevantes que atendam às necessidades
+                    em constante evolução de nossos clientes. Buscamos superar as expectativas, fornecendo produtos de
+                    alta qualidade, serviços excepcionais e oportunidades de moradia excepcionais, promovendo o
+                    crescimento econômico e social em todas as áreas em que operamos. Através do nosso compromisso com a
+                    excelência e a sustentabilidade, estamos construindo um legado duradouro que beneficia não apenas
+                    nossos colaboradores, mas também as comunidades que servimos, contribuindo para um futuro mais
+                    brilhante e próspero para todos.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Nova seção -->
+    <section class="custom-section py-5 scrollable-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Nossa Estratégia de Excelência</h2>
+                    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                            <!-- Adicione mais indicadores para mais itens do carrossel, se necessário -->
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active destaque-texto">
+                                <img src="imagem/imagemFundo.jpg" alt="Imagem Redonda"
+                                    class="d-block w-100 rounded-image imagem-menor">
+                                <div class="carousel-caption">
+                                    <h3>1. Direcionamento Estratégico</h3>
+                                    <p>Nosso direcionamento estratégico é guiado pela busca incansável pela excelência
+                                        em todos os aspectos. Buscamos a liderança em cada setor, mantendo nossa
+                                        responsabilidade social e ambiental. Nossa estratégia envolve a expansão
+                                        consciente para novos mercados, investindo em inovação e mantendo nosso
+                                        compromisso com a qualidade.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item destaque-texto">
+                                <img src="imagem/imagemFundo.jpg" alt="Imagem Redonda"
+                                    class="d-block w-100 rounded-image imagem-menor">
+                                <div class="carousel-caption">
+                                    <h3>1. Direcionamento Estratégico</h3>
+                                    <p>Nosso direcionamento estratégico é guiado pela busca incansável pela excelência
+                                        em todos os aspectos. Buscamos a liderança em cada setor, mantendo nossa
+                                        responsabilidade social e ambiental. Nossa estratégia envolve a expansão
+                                        consciente para novos mercados, investindo em inovação e mantendo nosso
+                                        compromisso com a qualidade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* CSS personalizado para a imagem no carrossel */
+        .imagem-menor {
+            max-width: 400px;
+            /* Defina o tamanho máximo desejado para a imagem */
+            margin: 0 auto;
+            /* Centralizar a imagem horizontalmente */
+            display: block;
+            /* Remover margens extras */
+        }
+
+        /* CSS personalizado para destacar o texto no carrossel */
+        .destaque-texto {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Plano de fundo escuro */
+            display: flex;
+            justify-content: center;
+            /* Centralizar horizontalmente */
+            align-items: center;
+            /* Centralizar verticalmente */
+            text-align: center;
+            /* Centralizar texto */
+            color: #fff;
+            /* Cor do texto */
+            padding: 20px;
+            /* Espaçamento interno */
+        }
+
+        .destaque-texto h3 {
+            font-size: 36px;
+            /* Tamanho da fonte do título */
+            font-weight: bold;
+            /* Negrito para o título */
+            margin-bottom: 10px;
+            /* Espaçamento inferior */
+        }
+
+        .destaque-texto p {
+            font-size: 18px;
+            /* Tamanho da fonte do texto */
+            line-height: 1.5;
+            /* Espaçamento entre linhas */
+        }
+
+        /* Estilo para a nova seção */
+        .custom-section {
+            background-color: #333;
+            /* Cor de fundo escura */
+            color: #fff;
+            /* Cor do texto */
+            padding: 30px;
+            /* Espaçamento interno */
+            text-align: center;
+            /* Alinhamento do conteúdo ao centro */
+        }
+
+
+
+        /* Estilo para o texto estilizado */
+        .styled-text {
+            font-family: 'Arial', sans-serif;
+            /* Fonte do texto */
+            font-size: 20px;
+            /* Tamanho do texto */
+            font-weight: bold;
+            /* Negrito */
+            letter-spacing: 2px;
+            /* Espaçamento entre letras */
+            margin-bottom: 20px;
+            /* Espaçamento inferior */
+        }
+
+        
+    </style>
+
     <footer class="footer bg-dark text-white">
         <div class="container">
             <div class="row">
