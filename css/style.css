@@ -1,0 +1,75 @@
+/* Estilo para os links da barra de navegação */
+.navbar-nav .nav-link {
+    color: #333; /* Cor do texto normal */
+}
+
+/* Efeito hover para os links da barra de navegação */
+.navbar-nav .nav-link:hover {
+    color: #5ea4ee; /* Cor do texto ao passar o mouse (azul) */
+}
+
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #333; /* Cor de fundo do rodapé (pode ser personalizada) */
+    color: #fff; /* Cor do texto do rodapé (pode ser personalizada) */
+    padding: 30px 0; /* Espaçamento interno superior e inferior */
+}
+
+.footer h3 {
+    color: #f8f9fa; /* Cor do título do rodapé (pode ser personalizada) */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #f8f9fa; /* Cor dos links no rodapé (pode ser personalizada) */
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse sobre os links */
+}
+
+
+/* Estilo para as seções com imagem à esquerda */
+.container-left-image {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 40px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.container-left-image img {
+    max-width: 100%; /* Imagem responsiva */
+}
+
+/* Estilo para as seções com imagem à direita */
+.container-right-image {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 40px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.container-right-image img {
+    max-width: 100%; /* Imagem responsiva */
+}
+
+/* Estilo para as seções com imagem à esquerda */
+.container-left-image {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 40px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}

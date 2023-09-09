@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Adicione o link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="imagem/logo.jpeg" alt="" width="200" height="200"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="imagem/logo.jpeg" alt="" width="200" height="200"
+                    class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,12 +49,128 @@
             </div>
         </div>
     </nav>
+    <!-- Seção de Banner com Carrossel -->
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bannerCarousel" data-slide-to="1"></li>
+            <li data-target="#bannerCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Título do Banner 1</h3>
+                    <p>Descrição do Banner 1</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Título do Banner 2</h3>
+                    <p>Descrição do Banner 2</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Título do Banner 3</h3>
+                    <p>Descrição do Banner 3</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
 
-    <!-- Adicione o conteúdo da sua página abaixo -->
+    <!-- Seção 1 com Imagem à Esquerda -->
+    <section class="container  my-5 container-left-image">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imagem/banner3.jpg" alt="Imagem 1" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Quem Somos</h2>
+                <p>O Grupo Soares iniciou sua jornada em 1967, quando os irmãos Odilon José Soares e Elon José Soares
+                    fundaram sua primeira loja de materiais para construção. Desde então, temos acreditado na força de
+                    traçar nossos próprios caminhos como base para o sucesso duradouro. Nossa trajetória de crescimento
+                    e inovação reflete nosso compromisso com a excelência e a criação de valor.
+                    <br /> O compromisso com a equipe, clientes, fornecedores e parceiros é uma força motriz que
+                    impulsiona nossa jornada rumo à excelência. Hoje, o Grupo Soares se destaca como uma das maiores
+                    redes do segmento do Centro-Oeste. O sucesso da Irmãos Soares Materiais de Construção, com suas 17
+                    lojas estrategicamente localizadas em diferentes cidades de Goiás e Minas Gerais, é um testemunho do
+                    nosso compromisso em oferecer produtos de qualidade e serviços excepcionais aos nossos clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2 com Imagem à Direita -->
+    <section class="container my-5  container-right-image">
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <img src="imagem//banner3.jpg" alt="Imagem 2" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2>Visão</h2>
+                <p>Nossa visão é ser reconhecido como um líder exemplar no setor de empreendedorismo, inovação e
+                    compromisso, expandindo nossa influência e impacto para além das fronteiras do Centro-Oeste,
+                    enquanto continuamos a criar oportunidades excepcionais para nossos clientes e colaboradores.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+
+    <!-- Seção no fundo com background escuro -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="imagem/secao-background.jpg" alt="Imagem de Fundo" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Título da Seção</h2>
+                    <p>Texto da seção. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contato</h3>
+                    <p>Endereço: Rua da Empresa, 123</p>
+                    <p>Telefone: (123) 456-7890</p>
+                    <p>Email: contato@empresa.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Inclua os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) no final do seu documento -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+</html>
+
+
+
+
+
+
+<!-- Adicione o conteúdo da sua página abaixo -->
+
+<!-- Inclua os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) no final do seu documento -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
