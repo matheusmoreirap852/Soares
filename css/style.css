@@ -11,7 +11,7 @@ html {
 }
 
 .header-inicio {
-    color: #fff;
+    color: #183762;
 }
 /* Estilo para o botão "Voltar ao Topo" */
 #btnVoltarAoTopo {
@@ -35,8 +35,9 @@ html {
 
 
 
+/* Estilize seus links <a> com a fonte personalizada */
 a {
-    color: #dee2e6;
+    color: #183762;
     text-decoration: none;
     background-color: transparent;
 }
@@ -93,25 +94,32 @@ a {
     margin-bottom: 20px;
 }
 
-.submenu li a {
-    text-decoration: none;
-    transition: color 0.3s ease; 
+.bg-dark-fundo{
+    background-color: #567666;
 }
 
    /* Estilize os submenus para que eles fiquem ocultos por padrão */
    .submenu {
     display: none;
     position: absolute;
-    background-color: #343a40;
-    color: #5ea4ee; 
-    padding: 5px;
+    background-color: #DEE4F0;
+    color: #183762;
+    padding: 10px;
     margin-top: 30px;
     transition: color 0.3s ease; 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
+.submenu li{
+    display: block;
+}
+.submenu li a {
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
 .fixed-top{
-    background-color: #343a40;
+    background-color: #DEE4F0;
 }
 
 .navbar-nav .nav-link{
@@ -128,17 +136,20 @@ a {
 .nav-item.active .submenu {
     display: block;
 }
-
+.footer .color-black{
+    color: #333;
+    margin-top: 5px;
+}
 
 /* Estilos para o rodapé */
 .footer {
-    background-color: #333; /* Cor de fundo do rodapé (pode ser personalizada) */
-    color: #fff; /* Cor do texto do rodapé (pode ser personalizada) */
+    background-color: #fff; /* Cor de fundo do rodapé (pode ser personalizada) */
+    color: #333; /* Cor do texto do rodapé (pode ser personalizada) */
     padding: 30px 0; /* Espaçamento interno superior e inferior */
 }
 
 .footer h3 {
-    color: #f8f9fa; /* Cor do título do rodapé (pode ser personalizada) */
+    color: #333; /* Cor do título do rodapé (pode ser personalizada) */
 }
 
 .footer ul {
@@ -151,7 +162,7 @@ a {
 }
 
 .footer ul li a {
-    color: #f8f9fa; /* Cor dos links no rodapé (pode ser personalizada) */
+    color: #333; /* Cor dos links no rodapé (pode ser personalizada) */
     text-decoration: none;
 }
 
@@ -205,6 +216,17 @@ a {
     padding: 0; /* Remova o espaçamento interno da lista */
 }
 
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /* Estilo para cada item da lista */
 .values-list-item {
     font-family: Georgia, serif; /* Fonte para os valores */
@@ -260,6 +282,46 @@ a {
 }
 
 
+    body{
+        background-color: #9a9a1e;
+    }
+
+    /* Estilo para a seção */
+    .section-6 {
+        background-color: #567666; /* Cor de fundo escura */
+        color: #fff; /* Cor do texto */
+        padding: 30px; /* Espaçamento interno */
+        text-align: center; /* Alinhamento do conteúdo ao centro */
+    }
+
+    /* Estilo para o título */
+    .section-6 h2 {
+        font-size: 24px; /* Tamanho do título */
+        margin-bottom: 20px; /* Espaçamento inferior do título */
+    }
+
+    /* Estilo para o texto */
+    .section-6 p {
+        font-size: 18px; /* Tamanho do texto */
+        line-height: 1.5; /* Espaçamento entre linhas */
+        margin-bottom: 20px; /* Espaçamento inferior do texto */
+    }
 
 
 
+
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-md-6 img,
+.col-md-6 h3,
+.col-md-6 p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}

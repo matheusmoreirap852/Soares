@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Adicione o link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="css/style.css">
-        <!-- Adicione o link para o CSS do Slick -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Adicione o link para o CSS do Slick -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     <!-- Adicione os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -26,15 +28,17 @@
 
 <body>
     <a id="inicio"></a>
-    <header class="header-inicio bg-dark">
+    <header class="header-inicio">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imagem/logo.jpeg" alt="" width="200" height="200" class="img-fluid" style="opacity: 40%;"></a>
+                <a class="navbar-brand" href="index.html"><img src="imagem/LOGO.png" alt="" width="200"
+                        height="200" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span>
                         <i class="fas fa-sliders-h-square"></i>
-                       <i class="fas fa-bars" style="color: aliceblue;"></i>  <!-- Use o ícone desejado do FontAwesome -->
+                        <i class="fas fa-bars" style="color: aliceblue;"></i>
+                        <!-- Use o ícone desejado do FontAwesome -->
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -51,19 +55,19 @@
                             <a class="nav-link" href="#">Perfil da Empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="direcionamentoEstrategico.html">Direcionamento Estratégico</a>
+                            <a class="nav-link" href="index.html#section-6">Direcionamento Estratégico</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="diretoria.html">Diretoria</a>
+                            <a class="nav-link" href="index.html#section-7">Diretoria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="conselho.html">Conselho</a>
+                            <a class="nav-link" href="index.html#section-8">Conselho</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="atividade.html">Nossas Atividades</a>
+                            <a class="nav-link" href="index.html#section-9">Nossas Atividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" href="index.html#section-10">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -77,28 +81,18 @@
         <ol class="carousel-indicators">
             <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#bannerCarousel" data-slide-to="1"></li>
-            <li data-target="#bannerCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid"  alt="Banner 1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Título do Banner 1</h3>
-                    <p>Descrição do Banner 1</p>
+                   
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+                <img src="imagem/BANNER2.png" class="d-block w-100 img-fluid" alt="Banner 2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Título do Banner 2</h3>
-                    <p>Descrição do Banner 2</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="imagem/banner1.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Título do Banner 3</h3>
-                    <p>Descrição do Banner 3</p>
+                   
                 </div>
             </div>
         </div>
@@ -113,45 +107,44 @@
     </section>
     <div id="section-2"></div>
     <!-- Seção 1 com Imagem à Esquerda -->
-    <section class="container  my-5 container-left-image">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="imagem/banner3.jpg" alt="Imagem 1" class="img-fluid">
+    <div class="bg-dark-fundo">
+        <section class="container my-5 container-left-image">
+            <div class="row">
+                <!-- Removendo a imagem -->
+                <div class="col-md-12 text-center"> <!-- Alterando a classe da coluna e centralizando o conteúdo -->
+                    <h2 class="larger-text">Quem Somos</h2> <!-- Adicionando classe para aumentar o tamanho da letra no título -->
+                    <p class="larger-text"> <!-- Adicionando classe para aumentar o tamanho da letra no texto -->
+                        O Grupo Soares iniciou sua jornada em 1967, quando os irmãos Odilon José Soares e Elon José
+                        Soares fundaram sua primeira loja de materiais para construção. Desde então, temos acreditado na força
+                        de traçar nossos próprios caminhos como base para o sucesso duradouro. Nossa trajetória de crescimento
+                        e inovação reflete nosso compromisso com a excelência e a criação de valor.
+                        <br /> O compromisso com a equipe, clientes, fornecedores e parceiros é uma força motriz que impulsiona
+                        nossa jornada rumo à excelência. Hoje, o Grupo Soares se destaca como uma das maiores redes do segmento
+                        do Centro-Oeste. O sucesso da Irmãos Soares Materiais de Construção, com suas 17 lojas
+                        estrategicamente localizadas em diferentes cidades de Goiás e Minas Gerais, é um testemunho do nosso
+                        compromisso em oferecer produtos de qualidade e serviços excepcionais aos nossos clientes.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2>Quem Somos</h2>
-                <p>O Grupo Soares iniciou sua jornada em 1967, quando os irmãos Odilon José Soares e Elon José Soares
-                    fundaram sua primeira loja de materiais para construção. Desde então, temos acreditado na força de
-                    traçar nossos próprios caminhos como base para o sucesso duradouro. Nossa trajetória de crescimento
-                    e inovação reflete nosso compromisso com a excelência e a criação de valor.
-                    <br /> O compromisso com a equipe, clientes, fornecedores e parceiros é uma força motriz que
-                    impulsiona nossa jornada rumo à excelência. Hoje, o Grupo Soares se destaca como uma das maiores
-                    redes do segmento do Centro-Oeste. O sucesso da Irmãos Soares Materiais de Construção, com suas 17
-                    lojas estrategicamente localizadas em diferentes cidades de Goiás e Minas Gerais, é um testemunho do
-                    nosso compromisso em oferecer produtos de qualidade e serviços excepcionais aos nossos clientes.
+            <div id="section-3"></div>
+        </section>
+    </div>
+    <section class="container my-5  container-right-image" style="padding-top: 190px; padding-bottom: 190px;">
+        <div class="row">
+            <div class="col-md-12 text-center"> <!-- Alterando a classe da coluna e centralizando o conteúdo -->
+                <h2 class="larger-text">Visão</h2> <!-- Adicionando classe para aumentar o tamanho da letra no título -->
+                <p class="larger-text"> <!-- Adicionando classe para aumentar o tamanho da letra no texto -->
+                    Nossa visão é ser reconhecido como um líder exemplar no setor de empreendedorismo, inovação e
+                    compromisso, expandindo nossa influência e impacto para além das fronteiras do Centro-Oeste,
+                    enquanto continuamos a criar oportunidades excepcionais para nossos clientes e colaboradores.
                 </p>
             </div>
-           
         </div>
-        <div id="section-3"></div>
     </section>
 
-    <section class="container my-5  container-right-image">
-        <div class="row">
-            <div class="col-md-6 order-md-2">
-                <img src="imagem//banner3.jpg" alt="Imagem 2" class="img-fluid">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h2>Visão</h2>
-                <p>Nossa visão é ser reconhecido como um líder exemplar no setor de empreendedorismo, inovação e
-                    compromisso, expandindo nossa influência e impacto para além das fronteiras do Centro-Oeste,
-                    enquanto continuamos a criar oportunidades excepcionais para nossos clientes e colaboradores.</p>
-            </div>
-        </div>
+    <section class="bg-dark-fundo text-white py-5">
         <div id="section-4"></div>
-    </section>
-    <section class="bg-dark text-white py-5">
-        <div class="container">
+        <div class="container" style="padding-top: 190px; padding-bottom: 190px;">
             <div class="row">
                 <div class="col-md-6">
                     <img src="imagem/banner1.jpg" alt="Imagem de Fundo" class="img-fluid">
@@ -173,6 +166,7 @@
                         <li><strong>Colaboração:</strong> Reconhecemos o poder da colaboração e valorizamos as
                             contribuições únicas de cada membro de nossa equipe, clientes, fornecedores e parceiros.
                         </li>
+
                         <li><strong>Sustentabilidade:</strong> Comprometemo-nos a operar de maneira responsável e
                             sustentável, considerando os impactos sociais e ambientais de nossas ações e decisões.</li>
                     </ul>
@@ -183,7 +177,7 @@
     </section>
 
     <!-- Seção com Imagem, Título e Texto -->
-    <section class="container mt-5 scrollable-section">
+    <section class="container mt-5 scrollable-section" style="padding-top: 200px; padding-bottom: 190px;">
         <div class="row">
             <div class="col-md-6">
                 <img src="imagem/banner3.jpg" alt="Imagem" class="img-fluid">
@@ -204,15 +198,302 @@
             </div>
         </div>
     </section>
-   
-    <footer class="footer bg-dark text-white">
+    <div id="section-6"></div>
+    <section class="section-6" style="padding-top: 100px;">
+        <div class="container">
+            <h2>Direcionamento Estratégico</h2>
+            <p>Nosso direcionamento estratégico é guiado pela busca incansável pela excelência em todos os aspectos.
+                Buscamos a liderança em cada setor, mantendo nossa responsabilidade social e ambiental. Nossa estratégia
+                envolve a expansão consciente para novos mercados, investindo em inovação e mantendo nosso compromisso
+                com a
+                qualidade.</p>
+            <div class="custom-carousel row">
+                <div class="col-md-6 mb-4" style="width: 50%;">
+                    <div class="image-container"
+                        style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 20px;">
+                        <img src="imagem/banner1.jpg" class="img-fluid" alt="Imagem 1">
+                    </div>
+                    <h3 class="mt-3" style="text-align: center;">1. Expansão Geográfica e Setorial:</h3>
+                    <p style="text-align: center;">Estamos comprometidos em ampliar nossa influência além das fronteiras
+                        do Centro-Oeste. Buscaremos
+                        novos mercados e oportunidades em todo o país, enquanto diversificamos nossas atividades para
+                        áreas afins que se alinhem à nossa missão, valores e expertise.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="imagem/banner1.jpg" alt="Imagem 1">
+                    <h3>2. Inovação Contínua: </h3>
+                    <p>A inovação é o alicerce de nossa estratégia. Investiremos em pesquisa e desenvolvimento para
+                        adotar
+                        novas ideias, tecnologias e práticas. Criaremos um ambiente que estimule a criatividade,
+                        encorajando
+                        todos os membros da equipe a contribuir com ideias inovadoras.
+                    </p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="imagem/banner1.jpg" width="350" height="auto" alt="Imagem 1">
+                    <h3>3. Parcerias Estratégicas:</h3>
+                    <p>Reconhecemos o valor da colaboração. Estabeleceremos parcerias estratégicas com empresas e
+                        organizações que compartilham nossos valores e visão. Buscaremos alianças que fortaleçam nossa
+                        capacidade de fornecer produtos e serviços excepcionais, expandindo nossa presença em novos
+                        mercados
+                        e setores.
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <img src="imagem/banner1.jpg" width="350" height="auto" alt="Imagem 1">
+                    <h3>4. Excelência em Qualidade e Atendimento:</h3>
+                    <p>Investiremos na qualidade de nossos produtos e serviços, visando a excelência em todas as áreas.
+                        Manteremos um alto padrão de atendimento ao cliente, superando consistentemente suas
+                        expectativas.
+                        Capacitaremos nossa equipe para sermos líderes no setor.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="imagem/banner1.jpg" width="350" height="auto" alt="Imagem 1">
+                    <h3>5. Desenvolvimento Sustentável:</h3>
+                    <p>A responsabilidade ambiental e social é fundamental. Operaremos de forma responsável e
+                        sustentável,
+                        minimizando nosso impacto no meio ambiente e contribuindo positivamente para as comunidades.
+                        Promoveremos práticas éticas e sustentáveis, integrando nossos valores de compromisso e
+                        sustentabilidade em todas as operações.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="imagem/banner1.jpg" width="350" height="auto" alt="Imagem 1">
+                    <h3>6. Crescimento com Propósito:</h3>
+                    <p>Nosso crescimento visa impactar positivamente indivíduos, famílias e comunidades. Buscaremos
+                        oportunidades que impulsionem não apenas nosso crescimento econômico, mas também o
+                        desenvolvimento
+                        social e econômico das regiões em que atuamos. Nosso propósito de construir um futuro melhor
+                        guiará
+                        nossas decisões e ações estratégicas.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="section-7"></div>
+    <section class="section-6" style="padding-top: 200px; padding-bottom: 190px; background-color: #fff; color: #000;">
+        <div class="container">
+            <h2>Diretoria</h2>
+            <p>Nossa diretoria é composta por líderes experientes e dedicados que impulsionam o sucesso do Grupo Soares:
+            </p>
+            <div class="custom-carousel">
+                <div class="col-md-3 align-items-center">
+                    <img src="imagem/img1.jpg" class="d-block mx-auto" width="150" height="auto" alt="Imagem 1"
+                        style="border-radius: 50%; padding: auto;">
+
+                    <h3>Elon José Soares Filho </h3>
+                    <p>– Formado em Administração pela PUC-GO, Nutrição Animal e Gestão de Fazendas. Trabalhou 10 anos
+                        na
+                        área de compras e 5 anos na área de vendas da Irmãos Soares. Hoje é gestor de Fazenda e membro
+                        do
+                        Conselho de Família.</p>
+                </div>
+                <div class="col-md-3 align-items-center">
+                    <img src="imagem/img1.jpg" class="d-block mx-auto" width="150" height="auto" alt="Imagem 1"
+                        style="border-radius: 50%; padding: auto;">
+                    <h3>Kátia Sores </h3>
+                    <p>Formada em Direito pela Universidade Católica de Goiás, Pós-Graduada em Administração Empresarial
+                        pela FGV. Trabalhou por 27 anos em uma das empresas do Grupo, a Irmãos Soares. Atuou como
+                        Gestora de
+                        Recursos Humanos e gestora de Marketing, entre outras funções. Atualmente participa como Membro
+                        do
+                        Conselho de Família.
+                    </p>
+                </div>
+                <div class="col-md-3 align-items-center">
+                    <img src="imagem/img1.jpg" class="d-block mx-auto" width="150" height="auto" alt="Imagem 1"
+                        style="border-radius: 50%; padding: auto;">
+                    <h3>Robson Soares </h3>
+                    <p>Sólida carreira com mais de 30 anos em posições Executiva, Gestão e Liderança dentro do grupo.
+                        Hoje
+                        diretor presidente da Irmãos Soares e membro do conselho familiar do grupo.
+                    </p>
+                </div>
+
+                <div class="col-md-3 align-items-center">
+                    <img src="imagem/img1.jpg" class="d-block mx-auto" width="150" height="auto" alt="Imagem 1"
+                        style="border-radius: 50%; padding: auto;">
+                    <h3>Solange Cristina Soares Musse </h3>
+                    <p>Formada em Administração de Empresas, com mais de 36 anos trabalhando para o Grupo Soares.
+                        Atualmente
+                        trabalha na parte financeira do grupo Soares e membro do conselho de família.</p>
+                </div>
+                <div class="col-md-3 align-items-center">
+                    <img src="imagem/img1.jpg" class="d-block mx-auto" width="150" height="auto" alt="Imagem 1"
+                        style="border-radius: 50%; padding: auto;">
+                    <h3>Tânia Mara Soares </h3>
+                    <p>Formada em Administração pela PUC-GO, Corretora de Imóveis, Governança Corporativa pelo IBGC/SP.
+                        Trabalha no grupo há 42 anos sendo 25 na Irmãos Soares. Hoje é gestora de um Condomínio
+                        Agropecuário, assessora na área patrimonial do grupo e é membro do conselho consultivo e do
+                        Conselho
+                        de Família</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="section-8" style="background-color: #333; padding-top: 50px; padding-bottom: 50px;">
+        <!-- Seção 1 com Imagem à Esquerda -->
+        <section class="container  my-5 container-left-image">
+            <h2>Conselho</h2>
+        </section>
+        <section class="container  my-5 container-left-image">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Celso Oliveira - <br /> Conselheiro</h2>
+                    <p>Executivo sênior com experiência em empresas brasileiras, americanas e francesas, Celso Oliveira
+                        liderou organizações em várias regiões, incluindo Brasil, América Latina e Península Ibérica.
+                        Sua
+                        trajetória é marcada por resultados consistentes em ambientes multiculturais e multinacionais.
+                        Com
+                        habilidades sólidas em venda de serviços e soluções, ele tem um histórico de sucesso na
+                        colaboração
+                        com clientes locais e regionais nos setores público e privado. Sua experiência abrange desde
+                        startups até reestruturações, passando pelo planejamento estratégico, vendas, serviços,
+                        operações e
+                        desenvolvimento de negócios. Em seus 15 anos como executivo, dos quais 10 liderou operações na
+                        América Latina, e com quase 30 anos de experiência profissional geral, Celso Oliveira traz um
+                        conjunto abrangente de habilidades essenciais para impulsionar o crescimento, expansão e
+                        evolução de
+                        qualquer organização. Ele é ágil, colaborativo e está disposto a se adaptar rapidamente conforme
+                        as
+                        demandas. Além disso, demonstra tenacidade para implementar planos bem definidos de maneira
+                        eficiente.</p>
+                </div>
+
+                <div class="col-md-6">
+
+                    <h2>Marcelo Camorim - Presidente do Conselho</h2>
+                    <p>Contador, economista e bacharel em direito com mba pela FGV em relação com investidores.
+                        <br /> Com mais de 35 anos de experiência em cargos de alta gestão, Marcelo Camorim construiu
+                        uma
+                        carreira notável. Sua jornada teve início como Trainee, alcançando o posto de CEO e,
+                        posteriormente,
+                        Conselheiro de Administração e Consultivo. Atualmente, assume a posição de Presidente do
+                        Conselho de
+                        Administração e Consultivo, além de servir como Conselheiro Fiscal em Fundações sem fins
+                        lucrativos.
+                        Além de empresário, ele é um palestrante renomado na área de gestão e carreira. Marcelo Camorim
+                        também é integrante da bancada da Jovem Pan, compartilhando sua expertise em economia e
+                        política.
+
+                    </p>
+                </div>
+
+            </div>
+            <div id="section-3"></div>
+        </section>
+    </div>
+
+    <div id="section-9" style="background-color: #fff; padding-top: 50px; padding-bottom: 50px;">
+        <section class="bg-dark-fundo text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="imagem/banner1.jpg" alt="Imagem de Fundo" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Nossas Atividades</h2>
+                        <p>Explore nossas diversas atividades empresariais, cada uma com um papel fundamental em nossa
+                            trajetória:</p>
+                        <ul>
+                            <li><strong>Irmãos Soares </strong> A jornada da Irmãos Soares teve início em 1º de janeiro
+                                de
+                                1967, na cidade de Goiânia, Goiás. Os irmãos Odilon José Soares e Elon José Soares
+                                adquiriram a Ferragista São Thomé em dezembro de 1966, ingressando no ramo de materiais
+                                de
+                                construção. O sucesso da Irmãos Soares cresceu em paralelo com a expansão do
+                                Centro-Oeste
+                                brasileiro.</li>
+
+                            <li>Por 21 vezes, a Irmãos Soares foi eleita a empresa de materiais de construção mais
+                                lembrada
+                                pelos consumidores do estado de Goiás pelo prêmio Pop List do jornal "O Popular". A
+                                excelência da empresa também foi reconhecida com o primeiro lugar nas categorias
+                                "Empresa de
+                                Material de Construção" nas cidades de Uberlândia e Ituiutaba, pelo prêmio "Top Of
+                                Mind".
+
+                                A empresa se destaca como um pilar de qualidade, compromisso e confiança no mercados.
+
+                            </li>
+                            <li><strong>Soares Incorporações: </strong> BParceira de marcas conceituadas, a Soares
+                                Incorporações tem contribuído para o desenvolvimento imobiliário com projetos inovadores
+                                e
+                                de qualidade</li>
+
+                            <li><strong>Soares Administradora de Fazendas
+                                    :</strong> Investindo na pecuária e agricultura em Goiás, a Soares Administradora de
+                                Fazendas é um pilar essencial do nosso grupo, comprometido com a produção sustentável.
+                            </li>
+                            <li><strong>Essence</strong> A Essence Acabamentos, como a marca premium do Grupo Soares
+                                localizada em Jataí, representa o encontro entre o requinte e a excelência. Com
+                                materiais de
+                                qualidade excepcional e um compromisso inabalável com o padrão superior, nossa missão é
+                                elevar espaços a ambientes inspiradores e personalizados, que ecoem a sua essência e
+                                proporcionem conforto e bem-estar.
+                                <br />
+                                A história da Essence é uma jornada incessante em busca de expressão e singularidade.
+                                Cada
+                                indivíduo é único, e acreditamos que seu espaço deve ser um reflexo disso. Vamos além de
+                                ser
+                                apenas uma loja de revestimentos; somos curadores de ambientes distintos, tal como você.
+                                Valorizamos a singularidade, e entendemos que ser singular transcende a exclusividade; é
+                                uma
+                                maneira de expressão, uma forma de adicionar vida, cor e personalidade a cada recanto.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="section-5"></div>
+        </section>
+    </div>
+
+    <!-- Seção com Imagem, Título e Texto -->
+    <section id="section-10" class="container mt-5 scrollable-section" style="padding-top: 200px; padding-bottom: 190px;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imagem/Logosemfundo.png" alt="Imagem" class="img-fluid">
+            </div>
+            <div class="col-md-6 mt-5">
+                <h1 class="mt-12">Entre em Contato</h1>
+                <form action="processar_formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-white " >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h3>Contato</h3>
-                    <p>Endereço: Rua da Empresa, 123</p>
-                    <p>Telefone: (123) 456-7890</p>
-                    <p>Email: contato@empresa.com</p>
+                    <p class="color-black"><i class="fas fa-map-marker-alt"></i> Av. T2, N° 40 - Setor Bueno. Goiânia (GO)</p>
+                    <p class="color-black"><i class="fas fa-phone"></i> (62) 99642-9779</p>
+                    <p class="color-black"><i class="fas fa-envelope"></i> marketing@soaresempresas.com.br</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="imagem/Rodape.png" alt="" style="max-width: 500px; max-height: auto;">
                 </div>
             </div>
         </div>
@@ -232,11 +513,12 @@
     <!-- Adicione o conteúdo da sua página abaixo -->
 
     <!-- Inclua o jQuery (versão mais recente) -->
-   
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Adicione o link para o JavaScript do Slick -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/filder.js"></script>
 </body>
 
