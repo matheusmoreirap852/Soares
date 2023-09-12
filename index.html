@@ -9,52 +9,71 @@
     <!-- Adicione os links para os arquivos CSS do Bootstrap e o jQuery (se necessário) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Adicione o link para o arquivo CSS personalizado -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- Adicione o link para o CSS do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
     <!-- Adicione os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <script src="js/filder.js"></script>
 
 </head>
 
 <body>
     <a id="inicio"></a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <!-- Adicione a classe "fixed-top" para tornar o cabeçalho fixo -->
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="imagem/logo.jpeg" alt="" width="200" height="200"
-                    class="img-fluid"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil da Empresa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Direcionamento Estratégico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Diretoria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Conselho</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nossas Atividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+    <header class="header-inicio bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="imagem/logo.jpeg" alt="" width="200" height="200" class="img-fluid" style="opacity: 40%;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-sliders-h-square"></i>
+                       <i class="fas fa-bars" style="color: aliceblue;"></i>  <!-- Use o ícone desejado do FontAwesome -->
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="index.html#section-2">Quem Somos</a></li>
+                                    <li><a href="index.html#section-3">Visão</a></li>
+                                    <li><a href="index.html#section-4">Valores</a></li>
+                                    <li><a href="index.html#section-5">Propósito</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="#">Perfil da Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="direcionamentoEstrategico.html">Direcionamento Estratégico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="diretoria.html">Diretoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="conselho.html">Conselho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="atividade.html">Nossas Atividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+
     <!-- Seção de Banner com Carrossel -->
-    <section id="bannerCarousel" class="carousel slide" data-ride="carousel">
+    <section id="bannerCarousel" id="exemplo" class="carousel slide" data-ride="carousel" style="margin-top: 90px;">
         <ol class="carousel-indicators">
             <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#bannerCarousel" data-slide-to="1"></li>
@@ -92,7 +111,7 @@
             <span class="sr-only">Próximo</span>
         </a>
     </section>
-
+    <div id="section-2"></div>
     <!-- Seção 1 com Imagem à Esquerda -->
     <section class="container  my-5 container-left-image">
         <div class="row">
@@ -112,10 +131,11 @@
                     nosso compromisso em oferecer produtos de qualidade e serviços excepcionais aos nossos clientes.
                 </p>
             </div>
+           
         </div>
+        <div id="section-3"></div>
     </section>
 
-    <!-- Seção 2 com Imagem à Direita -->
     <section class="container my-5  container-right-image">
         <div class="row">
             <div class="col-md-6 order-md-2">
@@ -128,10 +148,8 @@
                     enquanto continuamos a criar oportunidades excepcionais para nossos clientes e colaboradores.</p>
             </div>
         </div>
+        <div id="section-4"></div>
     </section>
-    <!-- Rodapé -->
-
-    <!-- Seção no fundo com background escuro -->
     <section class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
@@ -161,6 +179,7 @@
                 </div>
             </div>
         </div>
+        <div id="section-5"></div>
     </section>
 
     <!-- Seção com Imagem, Título e Texto -->
@@ -185,61 +204,7 @@
             </div>
         </div>
     </section>
-    <!-- Nova seção -->
-    <section class="custom-section py-5 scrollable-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="section-title">Nossa Estratégia de Excelência</h2>
-                    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                            <!-- Adicione mais indicadores para mais itens do carrossel, se necessário -->
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active destaque-texto">
-                                <img src="imagem/imagemFundo.jpg" alt="Imagem Redonda"
-                                    class="d-block w-100 rounded-image imagem-menor">
-                                <div class="carousel-caption">
-                                    <h3>1. Direcionamento Estratégico</h3>
-                                    <p>Nosso direcionamento estratégico é guiado pela busca incansável pela excelência
-                                        em todos os aspectos. Buscamos a liderança em cada setor, mantendo nossa
-                                        responsabilidade social e ambiental. Nossa estratégia envolve a expansão
-                                        consciente para novos mercados, investindo em inovação e mantendo nosso
-                                        compromisso com a qualidade.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="carousel-item destaque-texto">
-                                <img src="imagem/imagemFundo.jpg" alt="Imagem Redonda"
-                                    class="d-block w-100 rounded-image imagem-menor">
-                                <div class="carousel-caption">
-                                    <h3>1. Direcionamento Estratégico</h3>
-                                    <p>Nosso direcionamento estratégico é guiado pela busca incansável pela excelência
-                                        em todos os aspectos. Buscamos a liderança em cada setor, mantendo nossa
-                                        responsabilidade social e ambiental. Nossa estratégia envolve a expansão
-                                        consciente para novos mercados, investindo em inovação e mantendo nosso
-                                        compromisso com a qualidade.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Próximo</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+   
     <footer class="footer bg-dark text-white">
         <div class="container">
             <div class="row">
@@ -256,20 +221,22 @@
     <!-- Inclua os links para os arquivos JavaScript do Bootstrap (jQuery é necessário) no final do seu documento -->
 
     <!-- Botão "Voltar ao Topo" -->
-    
+
     <div class="container">
         <div class="d-flex justify-content-center align-items-center fixed-bottom">
-            <button href="" id="btnVoltarAoTopo" class="btn btn-primary col-md-1 btn-floating" title="Voltar ao Topo">
+            <a href="#inicio" id="btnVoltarAoTopo" class="btn btn-primary col-md-1 btn-floating" title="Voltar ao Topo">
                 <i class="fas fa-arrow-up"></i>
-            </button>
+            </a>
         </div>
     </div>
     <!-- Adicione o conteúdo da sua página abaixo -->
 
     <!-- Inclua o jQuery (versão mais recente) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Adicione o link para o JavaScript do Slick -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/filder.js"></script>
 </body>
 

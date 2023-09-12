@@ -1,10 +1,25 @@
-/* No seu arquivo styles.css ou dentro da tag <style> no cabeçalho do HTML */
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave a todas as âncoras */
+    scroll-behavior: smooth; /* Para compatibilidade com navegadores mais antigos */
+}
+
+/* Define a velocidade da transição de rolagem */
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    transition-duration: 1s; /* Ajuste o valor para controlar a velocidade da transição */
+}
+
+.header-inicio {
+    color: #fff;
+}
+/* Estilo para o botão "Voltar ao Topo" */
 #btnVoltarAoTopo {
-    display: none; /* Inicialmente, o botão está oculto */
+    
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007BFF;
+    background-color: #343a40;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -17,96 +32,103 @@
     transition: background-color 0.3s, transform 0.3s;
 }
 
-#btnVoltarAoTopo:hover {
-    background-color: #0056b3;
-}
 
+
+
+a {
+    color: #dee2e6;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /* CSS personalizado para a imagem no carrossel */
 .imagem-menor {
     max-width: 400px;
-    /* Defina o tamanho máximo desejado para a imagem */
     margin: 0 auto;
-    /* Centralizar a imagem horizontalmente */
     display: block;
-    /* Remover margens extras */
 }
 
 /* CSS personalizado para destacar o texto no carrossel */
 .destaque-texto {
     background-color: rgba(0, 0, 0, 0.7);
-    /* Plano de fundo escuro */
     display: flex;
     justify-content: center;
-    /* Centralizar horizontalmente */
     align-items: center;
-    /* Centralizar verticalmente */
     text-align: center;
-    /* Centralizar texto */
     color: #fff;
-    /* Cor do texto */
     padding: 20px;
-    /* Espaçamento interno */
 }
 
 .destaque-texto h3 {
     font-size: 36px;
-    /* Tamanho da fonte do título */
     font-weight: bold;
     text-align: center;
-    /* Negrito para o título */
     margin-bottom: 10px;
-    /* Espaçamento inferior */
 }
 
 .destaque-texto p {
     font-size: 18px;
-    /* Tamanho da fonte do texto */
     line-height: 1.5;
-    /* Espaçamento entre linhas */
 }
 
 /* Estilo para a nova seção */
 .custom-section {
     background-color: #333;
-    /* Cor de fundo escura */
     color: #fff;
-    /* Cor do texto */
     padding: 30px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Alinhamento do conteúdo ao centro */
+    transition: background-color 0.3s ease;
 }
 
-
+.custom-section:hover {
+    background-color: #555;
+}
 
 /* Estilo para o texto estilizado */
 .styled-text {
     font-family: 'Arial', sans-serif;
-    /* Fonte do texto */
     font-size: 20px;
-    /* Tamanho do texto */
     font-weight: bold;
-    /* Negrito */
     letter-spacing: 2px;
-    /* Espaçamento entre letras */
     margin-bottom: 20px;
-    /* Espaçamento inferior */
 }
 
-.navbar {
-    background-color: #00bfff; /* Cor azul clara de exemplo */
+.submenu li a {
+    text-decoration: none;
+    transition: color 0.3s ease; 
 }
 
-/* Estilo para os links da barra de navegação */
-.navbar-nav .nav-link {
-    color: #333; /* Cor do texto normal */
+   /* Estilize os submenus para que eles fiquem ocultos por padrão */
+   .submenu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    color: #5ea4ee; 
+    padding: 5px;
+    margin-top: 30px;
+    transition: color 0.3s ease; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-top{
+    background-color: #343a40;
+}
+
+.navbar-nav .nav-link{
+    transition: color 0.3s ease; 
 }
 
 /* Efeito hover para os links da barra de navegação */
 .navbar-nav .nav-link:hover {
     color: #5ea4ee; /* Cor do texto ao passar o mouse (azul) */
 }
+
+/* Estilize o item "Perfil da Empresa" para que ele seja uma posição relativa */
+.nav-item:hover .submenu,
+.nav-item.active .submenu {
+    display: block;
+}
+
 
 /* Estilos para o rodapé */
 .footer {
@@ -236,3 +258,8 @@
 .scrollable-section.move-up {
     transform: translateY(-100px); /* Ajuste o valor conforme necessário para a quantidade desejada de deslocamento */
 }
+
+
+
+
+
