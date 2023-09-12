@@ -61,7 +61,7 @@ $(document).ready(function(){
       dots: true, // Exibe pontos de navegação
       arrows: true, // Exibe setas de navegação
       speed: 500, // Velocidade da transição
-      slidesToShow: 3, // Número de slides visíveis ao mesmo tempo
+      slidesToShow: 1, // Número de slides visíveis ao mesmo tempo
       slidesToScroll: 1 // Número de slides para rolar a cada transição
     });
   });

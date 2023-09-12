@@ -35,3 +35,19 @@ p {
     line-height: 1.5; /* Espaçamento entre linhas */
     margin-bottom: 20px; /* Espaçamento inferior do texto */
 }
+
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-md-6 img,
+.col-md-6 h3,
+.col-md-6 p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
