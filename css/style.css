@@ -119,11 +119,7 @@ a {
 }
 
 .fixed-top{
-<<<<<<< HEAD
     background-color: #DEE4F0;
-=======
-    background-color: #7291b1;
->>>>>>> 7a7b6a370ebb5441982a319ef70f6ed094ff1ebe
 }
 
 .navbar-nav .nav-link{
@@ -228,21 +224,21 @@ a {
 
 
 .propósito-section {
-    background-color: #f8f8f8; /* Cor de fundo da seção */
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+        background-color: #f8f8f8; /* Cor de fundo da seção */
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
-.propósito-section h2 {
-    font-size: 36px; /* Tamanho da fonte para o título */
-    color: #333; /* Cor do título */
-}
+    .propósito-section h2 {
+        font-size: 36px; /* Tamanho da fonte para o título */
+        color: #333; /* Cor do título */
+    }
 
-.propósito-section p {
-    font-size: 18px; /* Tamanho da fonte para o texto */
-    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
-    color: #666; /* Cor do texto */
-}
+    .propósito-section p {
+        font-size: 18px; /* Tamanho da fonte para o texto */
+        line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+        color: #666; /* Cor do texto */
+    }
 
 .title-itemValores{
     background: #9a9a1e;
@@ -368,32 +364,6 @@ a {
 
 
 
-<<<<<<< HEAD
-=======
-    /* Estilo para a seção */
-    .section-6 {
-        background-color: #333; /* Cor de fundo escura */
-        color: #fff; /* Cor do texto */
-        padding: 30px; /* Espaçamento interno */
-        text-align: center; /* Alinhamento do conteúdo ao centro */
-    }
-
-    /* Estilo para o título */
-    .section-6 h2 {
-        font-size: 24px; /* Tamanho do título */
-        margin-bottom: 20px; /* Espaçamento inferior do título */
-    }
-
-    /* Estilo para o texto */
-    .section-6 p {
-        font-size: 18px; /* Tamanho do texto */
-        line-height: 1.5; /* Espaçamento entre linhas */
-        margin-bottom: 20px; /* Espaçamento inferior do texto */
-    }
-
-
-
->>>>>>> 7a7b6a370ebb5441982a319ef70f6ed094ff1ebe
 
 
 .col-md-6 {
