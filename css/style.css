@@ -210,6 +210,61 @@ a {
     margin-bottom: 20px; /* Espaçamento inferior do título */
 }
 
+#bannerCarousel {
+    height: 710px; /* Altura fixa para a seção do banner */
+    overflow: hidden; /* Ocultar conteúdo que exceder a altura fixa */
+}
+
+/* Estilo para telas de tamanho médio (tablets, por exemplo) */
+@media (max-width: 768px) {
+    #bannerCarousel {
+        height: 250px; /* Altura menor para tablets */
+    }
+}
+
+
+.propósito-section {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.propósito-section h2 {
+    font-size: 36px; /* Tamanho da fonte para o título */
+    color: #333; /* Cor do título */
+}
+
+.propósito-section p {
+    font-size: 18px; /* Tamanho da fonte para o texto */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+    color: #666; /* Cor do texto */
+}
+
+.title-itemValores{
+    background: #9a9a1e;
+    padding: 15px;
+}
+
+.value-card {
+    height: 250px; /* Defina a altura desejada em pixels */
+}
+
+.value-card h3 {
+    height: 50px; /* Altura do h3 dentro do value-card */
+}
+
+.value-card p {
+    height: 150px; /* Altura do p dentro do value-card */
+}
+
+/* Estilo para telas pequenas (celulares, por exemplo) */
+@media (max-width: 480px) {
+    #bannerCarousel {
+        height: 200px;/* Altura ainda menor para celulares */
+    }
+}
+
+
 /* Estilo para os valores */
 .values-list {
     list-style: none; /* Remova os bullets da lista */
