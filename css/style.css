@@ -222,6 +222,54 @@ a {
     }
 }
 
+/* Estilos para a seção de fundo branco */
+.atividades-section {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para o título "Nossas Atividades" */
+.atividades-section h2 {
+    font-size: 36px; /* Tamanho da fonte para o título */
+    color: #333; /* Cor do título */
+    text-align: center; /* Centralizar o título */
+    margin-bottom: 30px; /* Espaçamento inferior para o título */
+}
+
+/* Estilos para a lista de atividades */
+.atividades-section ul {
+    list-style-type: none; /* Remover marcadores da lista */
+    padding-left: 0; /* Remover o recuo padrão da lista */
+}
+
+/* Estilos para os itens da lista */
+.atividades-section ul li {
+    margin-bottom: 30px; /* Espaçamento inferior para cada item da lista */
+    padding: 20px; /* Espaçamento interno para cada item */
+    border-radius: 8px; /* Borda arredondada para os blocos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para os blocos */
+    background-color: #fff; /* Cor de fundo dos blocos */
+}
+
+/* Estilos para os títulos de cada bloco */
+.atividades-section ul li strong {
+    display: block;
+    font-size: 24px; /* Tamanho da fonte para os títulos */
+    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+/* Cor preta para o texto dentro dos blocos de fundo branco */
+.atividades-section ul li p {
+    color: #000;
+}
+
+strong{
+    color: #333;
+}
+
+
 
 .propósito-section {
         background-color: #f8f8f8; /* Cor de fundo da seção */
