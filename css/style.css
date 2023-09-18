@@ -211,7 +211,7 @@ a {
 }
 
 #bannerCarousel {
-    height: 710px; /* Altura fixa para a seção do banner */
+    height: 1080px; /* Altura fixa para a seção do banner */
     overflow: hidden; /* Ocultar conteúdo que exceder a altura fixa */
 }
 
@@ -269,7 +269,10 @@ strong{
     color: #333;
 }
 
+.img-fluid {
+border-radius: 10px;
 
+}
 
 .propósito-section {
         background-color: #f8f8f8; /* Cor de fundo da seção */
