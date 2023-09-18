@@ -270,9 +270,17 @@ strong{
 }
 
 .img-fluid {
-border-radius: 10px;
-
-}
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Adicione uma borda ofuscada */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra suave */
+    transition: all 0.3s ease-in-out; /* Adicione uma transição suave */
+  }
+  
+  /* Efeito hover para destacar a imagem */
+  .img-fluid:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+  }
 
 .propósito-section {
         background-color: #f8f8f8; /* Cor de fundo da seção */
