@@ -289,8 +289,9 @@ strong{
     }
 
 .title-itemValores{
-    background: #9a9a1e;
+    border-bottom: 5px solid #9a9a1e;
     padding: 15px;
+    margin-bottom: 50px;
 }
 
 .value-card {
