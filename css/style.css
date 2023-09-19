@@ -440,3 +440,34 @@ strong{
     max-width: 100%;
     margin: 0 auto;
 }
+
+
+
+
+.social-bar {
+    background-color: #567666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    }
+
+.social-bar a {
+    font-size: 26px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Adicione uma borda ofuscada */
+   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra suave */
+    transition: all 0.3s ease-in-out; /* Adicione uma transição suave */
+
+}
+  
+  /* Efeito hover para destacar a imagem */
+  .social-bar a:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+  }
